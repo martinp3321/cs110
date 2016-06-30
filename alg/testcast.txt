@@ -1,0 +1,682 @@
+Trying:
+    countElem(['w', 'owl', 'w', 'awesome'], 'w')
+Expecting:
+    2
+ok
+Trying:
+    countElem(['w', 'abc', 'w', 'abc'], 'w')
+Expecting:
+    2
+ok
+Trying:
+    countElem(['b', 'b', 'b', 'awesome'], 'b')
+Expecting:
+    3
+ok
+Trying:
+    countElem(['w', 'owl', 'w', 'awesome'], 'z')
+Expecting:
+    0
+ok
+Trying:
+    countElem(['w', '0', 'w', '0'], '0')
+Expecting:
+    2
+ok
+Trying:
+    countElem(['www', 'ww', 'w', 'w'], 'w')
+Expecting:
+    2
+ok
+Trying:
+    countElem(['hello', 'world', 'w', 'awesome'], 'world')
+Expecting:
+    1
+ok
+Trying:
+    countElem(['1'], '1')
+Expecting:
+    1
+ok
+Trying:
+    countElem(['2', '2', '2', '2'], 'w')
+Expecting:
+    0
+ok
+Trying:
+    countElem([], '')
+Expecting:
+    0
+ok
+Trying:
+    findLast(['w', 'owl', 'w', 'awesome'], 'w')
+Expecting:
+    2
+ok
+Trying:
+    findLast(['a', 'ya', 'a', 'yahoo'], 'a')
+Expecting:
+    2
+ok
+Trying:
+    findLast(['w', 'owl', 'w', 'awesome', 'w'], 'w')
+Expecting:
+    4
+ok
+Trying:
+    findLast(['w', 'owl', 'e', 'awesome'], 'w')
+Expecting:
+    0
+ok
+Trying:
+    findLast(['w', 'owl', 'w', 'awesome', '1', '2'], '2')
+Expecting:
+    5
+ok
+Trying:
+    findLast(['w', 'owl', 'w', 'woody'], 'woody')
+Expecting:
+    3
+ok
+Trying:
+    findLast(['woody', 'owl', 'w', 'woody'], 'w')
+Expecting:
+    2
+ok
+Trying:
+    findLast(['w', 'w', 'w', 'w'], 'w')
+Expecting:
+    3
+ok
+Trying:
+    findLast(['0', '1', '2', '3'], '1')
+Expecting:
+    1
+ok
+Trying:
+    findLast(['0', '1', '2', '3'], '')
+Expecting:
+    -1
+ok
+Trying:
+    insert('i', 'world!', 0) 
+Expecting:
+    'world!i'
+ok
+Trying:
+    insert('see', 's', 3) 
+Expecting:
+    'sees'
+ok
+Trying:
+    insert('yea', 'you', 2)
+Expecting:
+    'yeyoua'
+ok
+Trying:
+    insert('', '', 0) 
+Expecting:
+    ''
+ok
+Trying:
+    insert('e', 'woo', 0) 
+Expecting:
+    'wooe'
+ok
+Trying:
+    insert('spaces', 's', 5) 
+Expecting:
+    'spacess'
+ok
+Trying:
+    int2str(-1000092)
+Expecting:
+    '-1000092'
+ok
+Trying:
+    int2str(-10)
+Expecting:
+    '-10'
+ok
+Trying:
+    int2str(1000092)
+Expecting:
+    '1000092'
+ok
+Trying:
+    int2str(33)
+Expecting:
+    '33'
+ok
+Trying:
+    int2str(11)
+Expecting:
+    '11'
+ok
+Trying:
+    int2str(-33)
+Expecting:
+    '-33'
+ok
+Trying:
+    int2str(666)
+Expecting:
+    '666'
+ok
+Trying:
+    int2str(-10000920)
+Expecting:
+    '-10000920'
+ok
+Trying:
+    int2str(0)
+Expecting:
+    ''
+ok
+Trying:
+    int2str(311666)
+Expecting:
+    '311666'
+ok
+Trying:
+    lastOccurMostFreqElem([0,0,2,2,0,2])
+Expecting:
+    5
+ok
+Trying:
+    lastOccurMostFreqElem([0,0,2,0,2])
+Expecting:
+    3
+ok
+Trying:
+    lastOccurMostFreqElem([0])
+Expecting:
+    0
+ok
+Trying:
+    lastOccurMostFreqElem([0,0,2,2,9,9,9,9,0,2])
+Expecting:
+    7
+ok
+Trying:
+    lastOccurMostFreqElem([])
+Expecting:
+    -1
+ok
+Trying:
+    lastOccurMostFreqElem([0,0,0,0,0,0,0,0,0,0])
+Expecting:
+    9
+ok
+Trying:
+    repeatList([1,2,3], 0)
+Expecting:
+    []
+ok
+Trying:
+    repeatList([1,2,3], 1)
+Expecting:
+    [1, 2, 3]
+ok
+Trying:
+    repeatList([1,2,3], 2)
+Expecting:
+    [1, 2, 3, 1, 2, 3]
+ok
+Trying:
+    repeatList([1,2,3], 3)
+Expecting:
+    [1, 2, 3, 1, 2, 3, 1, 2, 3]
+ok
+Trying:
+    repeatList([1,2,3], 5)
+Expecting:
+    [1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3]
+ok
+Trying:
+    repeatList([0,0,0], 1)
+Expecting:
+    [0, 0, 0]
+ok
+Trying:
+    repeatList([33,11,666], 06)
+Expecting:
+    [33, 11, 666, 33, 11, 666, 33, 11, 666, 33, 11, 666, 33, 11, 666, 33, 11, 666]
+ok
+Trying:
+    repeatList([1,2,3], 10)
+Expecting:
+    [1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3]
+ok
+Trying:
+    repeatList([a], 0)
+Expecting:
+    []
+**********************************************************************
+File "algpack.py", line 32, in __main__.repeatList
+Failed example:
+    repeatList([a], 0)
+Exception raised:
+    Traceback (most recent call last):
+      File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/doctest.py", line 1289, in __run
+        compileflags, 1) in test.globs
+      File "<doctest __main__.repeatList[8]>", line 1, in <module>
+        repeatList([a], 0)
+    NameError: name 'a' is not defined
+Trying:
+    repeatList([1], 1)
+Expecting:
+    [1]
+ok
+Trying:
+    repeatList([100], 3)
+Expecting:
+    [100, 100, 100]
+ok
+Trying:
+    repeatList([1], 10)
+Expecting:
+    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+ok
+Trying:
+    list = [1,2,3]
+Expecting nothing
+ok
+Trying:
+    replace(list,2,'z')
+Expecting:
+    [1, 2, 'z']
+ok
+Trying:
+    list = [1,3,4]
+Expecting nothing
+ok
+Trying:
+    replace(list,1,'z')
+Expecting:
+    [1, 'z', 4]
+ok
+Trying:
+    list = [1]
+Expecting nothing
+ok
+Trying:
+    replace(list,0,'z')
+Expecting:
+    ['z']
+ok
+Trying:
+    list = [1,2,3]
+Expecting nothing
+ok
+Trying:
+    replace(list,1,'z909')
+Expecting:
+    [1, 'z909', 3]
+ok
+Trying:
+    mylist = [1, 5, 9, 2, 0, 8]
+Expecting nothing
+ok
+Trying:
+    sortList(mylist)
+Expecting nothing
+ok
+Trying:
+    mylist
+Expecting:
+    [0, 1, 2, 5, 8, 9]
+ok
+Trying:
+    mylist = [1, 5, 9, 2, 0, 8, 0, 0]
+Expecting nothing
+ok
+Trying:
+    sortList(mylist)
+Expecting nothing
+ok
+Trying:
+    mylist
+Expecting:
+    [0, 0, 0, 1, 2, 5, 8, 9]
+ok
+Trying:
+    mylist = [1, 5, 9, 2, 0, 8, 9, 9]
+Expecting nothing
+ok
+Trying:
+    sortList(mylist)
+Expecting nothing
+ok
+Trying:
+    mylist
+Expecting:
+    [0, 1, 2, 5, 8, 9, 9, 9]
+ok
+Trying:
+    mylist = [1, 5]
+Expecting nothing
+ok
+Trying:
+    sortList(mylist)
+Expecting nothing
+ok
+Trying:
+    mylist
+Expecting:
+    [1, 5]
+ok
+Trying:
+    mylist = [0,0,0,0,1]
+Expecting nothing
+ok
+Trying:
+    sortList(mylist)
+Expecting nothing
+ok
+Trying:
+    mylist
+Expecting:
+    [0, 0, 0, 0, 1]
+ok
+Trying:
+    mylist = [9,8,7,6,5,4,3,2,1]
+Expecting nothing
+ok
+Trying:
+    sortList(mylist)
+Expecting nothing
+ok
+Trying:
+    mylist
+Expecting:
+    [1, 2, 3, 4, 5, 6, 7, 8, 9]
+ok
+Trying:
+    mylist = [0]
+Expecting nothing
+ok
+Trying:
+    sortList(mylist)
+Expecting nothing
+ok
+Trying:
+    mylist
+Expecting:
+    [0]
+ok
+Trying:
+    mylist = [1]
+Expecting nothing
+ok
+Trying:
+    sortList(mylist)
+Expecting nothing
+ok
+Trying:
+    mylist
+Expecting:
+    [1]
+ok
+Trying:
+    mylist = [100]
+Expecting nothing
+ok
+Trying:
+    sortList(mylist)
+Expecting nothing
+ok
+Trying:
+    mylist
+Expecting:
+    [100]
+ok
+Trying:
+    mylist = [1,99,0]
+Expecting nothing
+ok
+Trying:
+    sortList(mylist)
+Expecting nothing
+ok
+Trying:
+    mylist
+Expecting:
+    [0, 1, 99]
+ok
+Trying:
+    mylist = [100,99]
+Expecting nothing
+ok
+Trying:
+    sortList(mylist)
+Expecting nothing
+ok
+Trying:
+    mylist
+Expecting:
+    [99, 100]
+ok
+Trying:
+    sortList2([1, 5, 9, 2, 0, 8])
+Expecting:
+    [0, 1, 2, 5, 8, 9]
+ok
+Trying:
+    sortList2([8, 1, 57, 39, 72, 57, 39, 8, 1])
+Expecting:
+    [1, 1, 8, 8, 39, 39, 57, 57, 72]
+ok
+Trying:
+    sortList2([9, 8, 7, 6, 5, 4, 3, 2, 1])
+Expecting:
+    [1, 2, 3, 4, 5, 6, 7, 8, 9]
+ok
+Trying:
+    sortList2([6, 1])
+Expecting:
+    [1, 6]
+ok
+Trying:
+    sortList2([8, 1, 57, 39, 72, 57, 39, 8, 1,89,100])
+Expecting:
+    [1, 1, 8, 8, 39, 39, 57, 57, 72, 89, 100]
+ok
+Trying:
+    sortList2([0,0,0,3,2,100])
+Expecting:
+    [0, 0, 0, 2, 3, 100]
+ok
+Trying:
+    sortList2([3,2,1,1])
+Expecting:
+    [1, 1, 2, 3]
+ok
+Trying:
+    sortList2([2,2,2,2,99])
+Expecting:
+    [2, 2, 2, 2, 99]
+ok
+Trying:
+    sortList2([1,0,1,0,1])
+Expecting:
+    [0, 0, 1, 1, 1]
+ok
+Trying:
+    sortList2([33,3,11])
+Expecting:
+    [3, 11, 33]
+ok
+Trying:
+    sortList2([100,100])
+Expecting:
+    [100, 100]
+ok
+Trying:
+    sortList2([0,0001])
+Expecting:
+    [0, 1]
+ok
+Trying:
+    str2int('246')
+Expecting:
+    246
+ok
+Trying:
+    str2int('12345')
+Expecting:
+    12345
+ok
+Trying:
+    str2int('33')
+Expecting:
+    33
+ok
+Trying:
+    str2int('11')
+Expecting:
+    11
+ok
+Trying:
+    str2int('-11')
+Expecting:
+    -11
+ok
+Trying:
+    str2int('0')
+Expecting:
+    0
+ok
+Trying:
+    str2int('6')
+Expecting:
+    6
+ok
+Trying:
+    str2int('666666')
+Expecting:
+    666666
+ok
+Trying:
+    str2int('22')
+Expecting:
+    22
+ok
+Trying:
+    str2int('-0')
+Expecting:
+    0
+ok
+Trying:
+    str2int('')
+Expecting:
+    ''
+**********************************************************************
+File "algpack.py", line 386, in __main__.str2int
+Failed example:
+    str2int('')
+Exception raised:
+    Traceback (most recent call last):
+      File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/doctest.py", line 1289, in __run
+        compileflags, 1) in test.globs
+      File "<doctest __main__.str2int[10]>", line 1, in <module>
+        str2int('')
+      File "algpack.py", line 389, in str2int
+        if s[0] == '-':
+    IndexError: string index out of range
+Trying:
+    string2list ('cat')
+Expecting:
+    ['c', 'a', 't']
+ok
+Trying:
+    string2list ('dog')
+Expecting:
+    ['d', 'o', 'g']
+ok
+Trying:
+    string2list ('yahoo')
+Expecting:
+    ['y', 'a', 'h', 'o', 'o']
+ok
+Trying:
+    string2list ('')
+Expecting:
+    []
+ok
+Trying:
+    string2list ('a')
+Expecting:
+    ['a']
+ok
+Trying:
+    string2list ('1234')
+Expecting:
+    ['1', '2', '3', '4']
+ok
+Trying:
+    string2list ('computer')
+Expecting:
+    ['c', 'o', 'm', 'p', 'u', 't', 'e', 'r']
+ok
+Trying:
+    string2list ('new')
+Expecting:
+    ['n', 'e', 'w']
+ok
+Trying:
+    string2list ('000')
+Expecting:
+    ['0', '0', '0']
+ok
+Trying:
+    string2list ('game')
+Expecting:
+    ['g', 'a', 'm', 'e']
+ok
+Trying:
+    string2list ('abcde')
+Expecting:
+    ['a', 'b', 'c', 'd', 'e']
+ok
+Trying:
+    substring('cat',0,3)
+Expecting:
+    'cat'
+ok
+Trying:
+    substring('denver',0,3)
+Expecting:
+    'den'
+ok
+Trying:
+    substring('denver',3,6)
+Expecting:
+    'ver'
+ok
+Trying:
+    substring('abcdefghi',4,9)
+Expecting:
+    'efghi'
+ok
+2 items had no tests:
+    __main__
+    __main__.numOccur
+10 items passed all tests:
+  10 tests in __main__.countElem
+  10 tests in __main__.findLast
+   6 tests in __main__.insert
+  10 tests in __main__.int2str
+   6 tests in __main__.lastOccurMostFreqElem
+   8 tests in __main__.replace
+  33 tests in __main__.sortList
+  12 tests in __main__.sortList2
+  11 tests in __main__.string2list
+   4 tests in __main__.substring
+**********************************************************************
+2 items had failures:
+   1 of  12 in __main__.repeatList
+   1 of  11 in __main__.str2int
+133 tests in 14 items.
+131 passed and 2 failed.
+***Test Failed*** 2 failures.
